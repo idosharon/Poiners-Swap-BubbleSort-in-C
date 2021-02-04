@@ -4,9 +4,15 @@ This project is a simple bubble sort written in C language, but the algorithm us
 See the Example:
 
 step1: 1 2 -10 100 8 5 
+
 step2: 1 -10 2 100 8 5 
+
 step3: 1 -10 2 8 100 5 
+
 step4: -10 1 2 8 100 5 
+
 step5: -10 1 2 8 5 100 
+
 step6: -10 1 2 5 8 100 
+
 step7: -10 1 2 5 8 100
