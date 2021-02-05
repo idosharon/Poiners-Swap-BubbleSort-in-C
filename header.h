@@ -1,6 +1,6 @@
 //
-//  header.h
-//  FirstProject
+//  file: header.h
+//  project: PointersSwapper + BubbleSort in C
 //
 //  Created by Ido Sharon on 02/10/2020.
 //
@@ -65,7 +65,7 @@ void printList(nodeptr head)
     printf("\n");
     while (temp != NULL)
     {
-        printf("%d ", temp->info);
+        printf("-> (%p) %d (%p) ", &temp, temp->info, &temp->next);
         temp = temp->next;
     }
 }

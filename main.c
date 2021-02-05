@@ -1,6 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <malloc/malloc.h>
+//
+//  file: main.c
+//  project: PointersSwapper + BubbleSort in C
+//
+//  Created by Ido Sharon on 02/10/2020.
+//
+
 #include <stdlib.h>
 #include "header.h"
 
@@ -12,18 +19,20 @@ int main()
     nodeptr head = NULL;
 
     head = (struct node*)malloc(sizeof(struct node));
-    if (head == NULL) {
+    if (head == NULL)
         return 1;
-    }
+    
+    
+    const int LENGTH = 2;
 
     head->next = NULL;
-    head->info = 5;
+    head->info = 9;
 
-    int arr[] = { 8, 100, -10, 2, 1};
+    int arr[LENGTH] = { 10, -10};
 
     printf("Welcome to BubbleSort algorithem");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < LENGTH; i++)
     {
         n = (struct node*)malloc(sizeof(struct node));
 
@@ -32,17 +41,10 @@ int main()
         head = n;
     }
 
-//    nodeptr firstNode = head;
-//    nodeptr secondNode = head->next->next->next->next;
-//    nodeptr thirdNode = head->next;
-
-
     printList(head);
 
     head = bubbleSort(head);
-//    swap(firstNode, secondNode);
-//    swap(secondNode, thirdNode);
-    printList(head);
+    printf("\n");
 
     return 1;
 
